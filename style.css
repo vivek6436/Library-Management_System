@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  transition: 0.3s;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#auth {
+  text-align: center;
+  margin-top: 100px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+header {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Glass cards */
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.3);
+  padding: 15px;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.loader {
+  border: 5px solid #eee;
+  border-top: 5px solid blue;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
